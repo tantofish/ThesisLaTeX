@@ -1,0 +1,10 @@
+*.pdf
+*.log
+*.aux
+*.dvi
+*.lof
+*.lot
+*.toc
+*.bbl
+*.blg
+thesis.synctex.gz
