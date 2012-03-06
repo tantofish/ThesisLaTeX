@@ -1,476 +1,118 @@
-@inproceedings{ Xie:05:LUI,
-    author = {Xing Xie and Hao Liu and Simon Goumaz and Wei-Ying Ma},
-    title = {Learning user interest for image browsing on small-form-factor devices},
-    booktitle = {Proceedings of ACM SIGCHI 2005},
-    year = {2005},
-    pages = {671--680},
-}
+@INPROCEEDINGS{Yang:02:MBHPTWS, 
+author={Ruigang Yang and Zhengyou Zhang}, 
+booktitle={Automatic Face and Gesture Recognition, 2002. Proceedings. Fifth IEEE International Conference on}, 
+title={Model-based head pose tracking with stereovision}, 
+year={2002}, 
+month={may}, 
+volume={}, 
+number={}, 
+pages={255 -260}, 
+abstract={We present a robust model-based stereo head tracking algorithm that operates in real time on a commodity PC. The use of an individualized three-dimensional head model, coupled with the epipolar constraint from the stereo image pair greatly improves the robustness of the tracking. Experimental results have shown that our method is able to track all the six degrees of freedom of the rigid part of head motions, over an extended period of time, in the presence of large angular and translational head motions, partial occlusions, and/or dramatic facial expression changes. Applications include human-computer interaction and eye-gaze correction for videoconferencing.}, 
+keywords={commodity PC;dramatic facial expression changes;epipolar constraint;experimental results;eye-gaze correction;head motions;human-computer interaction;model-based head pose tracking;model-based stereo head tracking;partial occlusions;real time;six degrees of freedom;stereovision;three-dimensional head model;videoconferencing;face recognition;image motion analysis;real-time systems;stereo image processing;tracking;user interfaces;}, 
+doi={10.1109/AFGR.2002.1004163}, 
+ISSN={},}
 
-@inproceedings{ Christopoulos:05:TJS,
-    author = {Charilaos Christopoulos and Athanassios Skodras and Touradj Ebrahimi},
-    title = {The JPEG2000 still image coding system: an overview},
-    booktitle = {Consumer Electronics, IEEE Transactions on},
-    year = {2000},
-    pages = {1103--1127},
-}
+@INPROCEEDINGS{Morency:03:PEU3VBE, 
+author={Morency, L.-P. and Sundberg, P. and Darrell, T.}, 
+booktitle={Analysis and Modeling of Faces and Gestures, 2003. AMFG 2003. IEEE International Workshop on}, 
+title={Pose estimation using 3D view-based eigenspaces}, 
+year={2003}, 
+month={oct.}, 
+volume={}, 
+number={}, 
+pages={ 45 - 52}, 
+abstract={ We present a method for estimating the absolute pose of a rigid object based on intensity and depth view-based eigenspaces, built across multiple views of example objects of the same class. Given an initial frame of an object with unknown pose, we reconstruct a prior model for all views represented in the eigenspaces. For each new frame, we compute the pose-changes between every view of the reconstructed prior model and the new frame. The resulting pose-changes are then combined and used in a Kalman filter update. This approach for pose estimation is user-independent and the prior model can be initialized automatically from any viewpoint of the view-based eigenspaces. To track more robustly over time, we present an extension of this pose estimation technique where we integrate our prior model approach with an adaptive differential tracker. We demonstrate the accuracy of our approach on face pose tracking using stereo cameras.}, 
+keywords={ 3D view-based eigenspaces; Kalman filter; adaptive differential tracker; face pose tracking; image reconstruction; pose estimation; principal component analysis; stereo cameras; Kalman filters; face recognition; image reconstruction; principal component analysis; solid modelling; tracking;}, 
+doi={10.1109/AMFG.2003.1240823}, 
+ISSN={},}
 
-@misc{ Chang:99:WF,
-    author = "E. Chang and S. Mallat and C. Yap",
-    title = "Wavelet Foveation",
-    year = "1999",
-    url = "citeseer.ist.psu.edu/article/chang99wavelet.html"
-}
+@INPROCEEDINGS{Breitenstein:08:RTFPEFSRI, 
+author={Breitenstein, M.D. and Kuettel, D. and Weise, T. and van Gool, L. and Pfister, H.}, 
+booktitle={Computer Vision and Pattern Recognition, 2008. CVPR 2008. IEEE Conference on}, 
+title={Real-time face pose estimation from single range images}, 
+year={2008}, 
+month={june}, 
+volume={}, 
+number={}, 
+pages={1 -8}, 
+abstract={We present a real-time algorithm to estimate the 3D pose of a previously unseen face from a single range image. Based on a novel shape signature to identify noses in range images, we generate candidates for their positions, and then generate and evaluate many pose hypotheses in parallel using modern graphics processing units (GPUs). We developed a novel error function that compares the input range image to precomputed pose images of an average face model. The algorithm is robust to large pose variations of plusmn90deg yaw, plusmn45deg pitch and plusmn30deg roll rotation, facial expression, partial occlusion, and works for multiple faces in the field of view. It correctly estimates 97.8% of the poses within yaw and pitch error of 15deg at 55.8 fps. To evaluate the algorithm, we built a database of range images with large pose variations and developed a method for automatic ground truth annotation.}, 
+keywords={3D pose estimation;automatic ground truth annotation;average face model;facial expression;graphics processing unit;partial occlusion;pose variation;range image;real-time algorithm;real-time face pose estimation;shape signature;computer graphics;face recognition;pose estimation;real-time systems;}, 
+doi={10.1109/CVPR.2008.4587807}, 
+ISSN={1063-6919},}
 
-@article{ Mohan:99:AMI,
-    author = "Rakesh Mohan and John R. Smith and Chung-Sheng Li",
-    title = "Adapting Multimedia Internet Content for Universal Access",
-    journal = "IEEE Transactions on Multimedia",
-    volume = "1",
-    number = "1",
-    pages = "104--114",
-    year = "1999",
-    url = "citeseer.ist.psu.edu/mohan99adapting.html"
-}
+@INPROCEEDINGS{Balasubramanian:07:BMEAFFPIHPE, 
+author={Balasubramanian, V.N. and Jieping Ye and Panchanathan, S.}, 
+booktitle={Computer Vision and Pattern Recognition, 2007. CVPR '07. IEEE Conference on}, 
+title={Biased Manifold Embedding: A Framework for Person-Independent Head Pose Estimation}, 
+year={2007}, 
+month={june}, 
+volume={}, 
+number={}, 
+pages={1 -7}, 
+abstract={The estimation of head pose angle from face images is an integral component of face recognition systems, human computer interfaces and other human-centered computing applications. To determine the head pose, face images with varying pose angles can be considered to be lying on a smooth low-dimensional manifold in high-dimensional feature space. While manifold learning techniques capture the geometrical relationship between data points in the high-dimensional image feature space, the pose label information of the training data samples are neglected in the computation of these embeddings. In this paper, we propose a novel supervised approach to manifold-based non-linear dimensionality reduction for head pose estimation. The Biased Manifold Embedding (BME) framework is pivoted on the ideology of using the pose angle information of the face images to compute a biased neighborhood of each point in the feature space, before determining the low-dimensional embedding. The proposed BME approach is formulated as an extensible framework, and validated with the Isomap, Locally Linear Embedding (LLE) and Laplacian Eigen-maps techniques. A Generalized Regression Neural Network (GRNN) is used to learn the non-linear mapping, and linear multi-variate regression is finally applied on the low-dimensional space to obtain the pose angle. We tested this approach on face images of 24 individuals with pose angles varying from -90deg to +90deg with a granularity of 2. The results showed substantial reduction in the error of pose angle estimation, and robustness to variations in feature spaces, dimensionality of embedding and other parameters.}, 
+keywords={Laplacian eigen-maps techniques;biased manifold embedding;face images;face recognition systems;generalized regression neural network;high-dimensional feature space;linear multivariate regression;locally linear embedding;manifold learning techniques;manifold-based nonlinear dimensionality;person-independent head pose estimation;pose label information;Laplace equations;eigenvalues and eigenfunctions;face recognition;feature extraction;learning (artificial intelligence);neural nets;regression analysis;}, 
+doi={10.1109/CVPR.2007.383280}, 
+ISSN={},}
 
-@article{ Smith:98:CTI,
-    author = "Smith, J.R. and Mohan, R. and Chung-Sheng Li",
-    title = "Content-based transcoding of images in the Internet",
-    journal = "Image Processing, 1998. ICIP 98. Proceedings. 1998 International Conference on",
-    volume = "3",
-    pages = "7--11",
-    year = "1998",
-}
+@article{Osadchy:07:SFDPEEBM,
+author = {Osadchy, Margarita and Cun, Yann Le and Miller, Matthew L.},
+title = {Synergistic Face Detection and Pose Estimation with Energy-Based Models},
+journal = {J. Mach. Learn. Res.},
+volume = {8},
+month = {May},
+year = {2007},
+issn = {1532-4435},
+pages = {1197--1215},
+numpages = {19},
+url = {http://dl.acm.org/citation.cfm?id=1248659.1248700},
+acmid = {1248700},
+publisher = {JMLR.org},
+abstract = {We describe a novel method for simultaneously detecting faces and estimating their pose in real time. The method employs a convolutional network to map images of faces to points on a low-dimensional manifold parametrized by pose, and images of non-faces to points far away from that manifold. Given an image, detecting a face and estimating its pose is viewed as minimizing an energy function with respect to the face/non-face binary variable and the continuous pose parameters. The system is trained to minimize a loss function that drives correct combinations of labels and pose to be associated with lower energy values than incorrect ones. The system is designed to handle very large range of poses without retraining. The performance of the system was tested on three standard data sets---for frontal views, rotated faces, and profiles---is comparable to previous systems that are designed to handle a single one of these data sets. We show that a system trained simuiltaneously for detection and pose estimation is more accurate on both tasks than similar systems trained for each task separately.},}
 
-@inproceedings{ Liu:03:ABL,
-    author = {Hao Liu and Xing Xie and Wei-Ying Ma and Hong-Jiang Zhang},
-    title = {Automatic browsing of large pictures on mobile devices},
-    booktitle = {MULTIMEDIA '03: Proceedings of the eleventh ACM international conference on Multimedia},
-    year = {2003},
-    isbn = {1-58113-722-2},
-    pages = {148--155},
-    location = {Berkeley, CA, USA},
-    doi = {http://doi.acm.org/10.1145/957013.957045},
-    publisher = {ACM Press},
-    address = {New York, NY, USA},
-}
+@INPROCEEDINGS{Storer:09:3DMAM, 
+author={Storer, M. and Urschler, M. and Bischof, H.}, 
+booktitle={Computer Vision Workshops (ICCV Workshops), 2009 IEEE 12th International Conference on}, 
+title={3D-MAM: 3D morphable appearance model for efficient fine head pose estimation from still images}, 
+year={2009}, 
+month={27 2009-oct. 4}, 
+volume={}, 
+number={}, 
+pages={192 -199}, 
+abstract={Identity-invariant estimation of head pose from still images is a challenging task due to the high variability of facial appearance. We present a novel 3D head pose estimation approach, which utilizes the flexibility and expressibility of a dense generative 3D facial model in combination with a very fast fitting algorithm. The efficiency of the head pose estimation is obtained by a 2D synthesis of the facial input image. This optimization procedure drives the appearance and pose of the 3D facial model. In contrast to many other approaches we are specifically interested in the more difficult task of head pose estimation from still images, instead of tracking faces in image sequences. We evaluate our approach on two publicly available databases (FacePix and USF HumanID) and compare our method to the 3D morphable model and other state of the art approaches in terms of accuracy and speed.}, 
+keywords={2D synthesis;3D head pose estimation approach;3D morphable appearance model;HumanID;facial appearance;fitting algorithm;identity-invariant estimation;face recognition;optimisation;pose estimation;}, 
+doi={10.1109/ICCVW.2009.5457701}, 
+ISSN={},}
 
-@inproceedings{ Lee:01:PIT,
-    author = {Lee K and Chang HS and Chun SS and Choi L and Sull S},
-    title = {Perceptionbased image transcoding for universal multimedia access},
-    booktitle = {Proceedings of the 8th international conference on image processing (ICIP-2001)},
-    year = {2001},
-    pages = {475--478},
-}
+@INPROCEEDINGS{Vatahska:07:FBHPEFI, 
+author={Vatahska, T. and Bennewitz, M. and Behnke, S.}, 
+booktitle={Humanoid Robots, 2007 7th IEEE-RAS International Conference on}, 
+title={Feature-based head pose estimation from images}, 
+year={2007}, 
+month={29 2007-dec. 1}, 
+volume={}, 
+number={}, 
+pages={330 -335}, 
+abstract={Estimating the head pose is an important capability of a robot when interacting with humans since the head pose usually indicates the focus of attention. In this paper, we present a novel approach to estimate the head pose from monocular images. Our approach proceeds in three stages. First, a face detector roughly classifies the pose as frontal, left, or right profile. Then, classifiers trained with AdaBoost using Haar-like features, detect distinctive facial features such as the nose tip and the eyes. Based on the positions of these features, a neural network finally estimates the three continuous rotation angles we use to model the head pose. Since we have a compact representation of the face using only few distinctive features, our approach is computationally highly efficient. As we show in experiments with standard databases as well as with real-time image data, our system locates the distinctive features with a high accuracy and provides robust estimates of the head pose.}, 
+keywords={AdaBoost algorithm;Haar-like feature-based robot head pose estimation;continuous rotation angle estimation;face detection;left profile;monocular image classification training;neural network;right profile;feature extraction;image classification;intelligent robots;learning (artificial intelligence);neurocontrollers;pose estimation;robot vision;}, 
+doi={10.1109/ICHR.2007.4813889}, 
+ISSN={},}
 
-@inproceedings{ Suh:03:ATC,
-    author = {Bongwon Suh and Haibin Ling and Benjamin B. Bederson and David W. Jacobs},
-    title = {Automatic thumbnail cropping and its effectiveness},
-    booktitle = {UIST '03: Proceedings of the 16th annual ACM symposium on User interface software and technology},
-    year = {2003},
-    isbn = {1-58113-636-6},
-    pages = {95--104},
-    location = {Vancouver, Canada},
-    doi = {http://doi.acm.org/10.1145/964696.964707},
-    publisher = {ACM Press},
-    address = {New York, NY, USA},
-}
-
-@inproceedings{ Wang:03:MBP,
-    author = {Ming-Yu Wang and Xing Xie and Wei-Ying Ma and Hong-Jiang Zhang},
-    title = {MobiPicture: browsing pictures on mobile devices},
-    booktitle = {MULTIMEDIA '03: Proceedings of the eleventh ACM international conference on Multimedia},
-    year = {2003},
-    isbn = {1-58113-722-2},
-    pages = {106--107},
-    location = {Berkeley, CA, USA},
-    doi = {http://doi.acm.org/10.1145/957013.957037},
-    publisher = {ACM Press},
-    address = {New York, NY, USA},
-}
-
-@article{ Rutishauser:04:IBA,
-    author = "Ueli Rutishauser and Dirk Walther and Christof Koch and Pietro Perona",
-    title = "Is Bottom-Up Attention Useful for Object Recognition?",
-    journal = "2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'04)",
-    volume = "2",
-    pages = "37--44",
-    year = "2004",
-}
-
-
-@article{ Rutishauser:04:OTU,
-    author = "Rutishauser, U. and Walther, D. and Koch, C. and Persona P.",
-    title = "On the usefulness of attention for object recognition",
-    journal = "In 2nd International Workshop on Attention and performance in Computational Vision 2004",
-    pages = "96--103",
-    location = {Prague, Csech Republic},
-    year = "2004",
-}
-
-@article{ Walther:05:SVA,
-    author = {Dirk Walther and Ueli Rutishauser and Christof Koch and Pietro Perona},
-    title = {Selective visual attention enables learning and recognition of multiple objects in cluttered scenes},
-    journal = {Comput. Vis. Image Underst.},
-    volume = {100},
-    number = {1-2},
-    year = {2005},
-    issn = {1077-3142},
-    pages = {41--63},
-    doi = {http://dx.doi.org/10.1016/j.cviu.2004.09.004},
-    publisher = {Elsevier Science Inc.},
-    address = {New York, NY, USA},
-}
-
-@article{ Bamidele:04:AAA,
-    author = {A. Bamidele and F. W M Stentiford and F. W. M. Stentiford and J. Morphett},
-    title = {An Attention-Based Approach to Content-Based Image Retrieval},
-    journal = {BT Technology Journal},
-    volume = {22},
-    number = {3},
-    year = {2004},
-    issn = {1358-3948},
-    pages = {151--160},
-    doi = {http://dx.doi.org/10.1023/B:BTTJ.0000047129.83260.79},
-    publisher = {Kluwer Academic Publishers},
-    address = {Hingham, MA, USA},
-}
-
-@inproceedings{ Wang:04:DAB,
-    author = {Xin-Jing Wang and Wei-Ying Ma and Xing Li},
-    title = {Data-driven approach for bridging the cognitive gap in image retrieval},
-    booktitle = {Multimedia and Expo, 2004. ICME '04. 2004 IEEE International Conference on},
-    year = {2004},
-    isbn = {0-7803-8603-5},
-    volume = {3},
-    pages = {2231--2234},
-}
-
-@article{ Koch:85:SSV,
-    author = {Koch, C.  and Ullman, S. },
-    citeulike-article-id = {941911},
-    issn = {0721-9075},
-    journal = {Hum Neurobiol},
-    keywords = {attention saliency},
-    number = {4},
-    pages = {219--227},
-    priority = {3},
-    title = {Shifts in selective visual attention: towards the underlying neural circuitry.},
-    volume = {4},
-    year = {1985}
-}
-
-@article{ Treisman:80:AFT,
-    author = {Treisman, A. M.  and Gelade, G. },
-    citeulike-article-id = {141654},
-    issn = {0010-0285},
-    journal = {Cognit Psychol},
-    keywords = {attention},
-    month = {January},
-    number = {1},
-    pages = {97--136},
-    priority = {0},
-    title = {A feature-integration theory of attention.},
-    volume = {12},
-    year = {1980}
-}
-
-@article{ Gottlieb:98:TRV,
-    author = {{Gottlieb}, J.~P. and {Kusunoki}, M. and {Goldberg}, M.~E.},
-    title = "{The representation of visual salience in monkey parietal cortex}",
-    journal = {nat},
-    year = 1998,
-    month = jan,
-    volume = 391,
-    pages = {481--484},
-    doi = {10.1038/35135},
-    adsnote = {Provided by the Smithsonian/NASA Astrophysics Data System}
-}
-
-@article{ Itti:98:AMS,
-    author = "Laurent Itti and Christof Koch and Ernst Niebur",
-    title = "A Model of Saliency-Based Visual Attention for Rapid Scene Analysis",
-    journal = "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-    volume = "20",
-    number = "11",
-    pages = "1254--1259",
-    year = "1998",
-    url = "citeseer.ist.psu.edu/itti98model.html"
-}
-
-@inproceedings{ Itti:98:ACF,
-    author = "Itti, L. and Koch, C.",
-    title = "A comparison of feature combination strateies for saliency-based visual attention systems",
-    booktitle = "In Proceedings of SPIE Human Vision and Electronic Imaging IV (HVEI '99)",
-    volume = "3644",
-    pages = "473--482",
-    year = "1999",
-    location = "San Jose, CA"
-}
-
-@article{ Treisman:88:FAE,
-    author = "Treisman, A. and Gormican, S.",
-    title = "Feature analysis in early vision: evidence from search asymmetries",
-    journal = "Psychology Review 95",
-    pages = "15--48",
-    year = "1988",
-}
-
-@inproceedings{ Ma:03:CIA,
-    author = {Yu-Fei Ma and Hong-Jiang Zhang},
-    title = {Contrast-based image attention analysis by using fuzzy growing},
-    booktitle = {Proceedings of ACM Multimedia 2003},
-    year = {2003},
-    pages = {374--381},
-}
-
-@inproceedings{ Deng:99:PGF,
-    author = {Deng, Yining   and Kenney, C.  and Moore, M.  and Manjunath, B. },
-    journal = {Circuits and Systems, 1999. ISCAS '99. Proceedings of the 1999 IEEE International Symposium on},
-    pages = {21--24},
-    title = {Peer group filtering and perceptual color image quantization},
-    url = {http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=779933},
-    volume = {4},
-    year = {1999}
-}
-
-@article{ Sahoo:97:TSU,
-    author = {{Sahoo}, P.~K. and {Slaaf}, D.~W. and {Albert}, T.~A.},
-    title = "{Threshold selection using a minimal histogram entropy difference}",
-    journal = {Optical Engineering},
-    year = 1997,
-    month = jul,
-    volume = 36,
-    pages = {1976-1981},
-    adsurl = {http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1997OptEn..36.1976S&db_key=PHY},
-    adsnote = {Provided by the Smithsonian/NASA Astrophysics Data System}
-}
-
-@inproceedings{ Hu:2005:RSA,
-    author = {Yiqun Hu and Deepu Rajan and Liang-Tien Chia},
-    title = {Robust subspace analysis for detecting visual attention regions in images},
-    booktitle = {Proceedings of ACM Multimedia 2005},
-    year = {2005},
-    pages = {716--724},
-}
-
-@misc{ Vidal:03:GPC,
-    author = "Rene Vidal and Yi Ma",
-    title = "Generalized Principal Component Analysis (GPCA)",
-    url = "citeseer.ist.psu.edu/676036.html"
-}
-
-@phdthesis{ Vidal:03:PHD,
-    Author = {Rene E. Vidal},
-    Title = {Generalized Principal Component Analysis (GPCA): An Algebraic Geometric Approach to Subspace Clustering and Motion Segmentation},
-    School = {EECS Department, University of California, Berkeley},
-    Year = {2003},
-    URL = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2003/4159.html},
-    Number = {UCB/ERL M03/35}
-}
-
-@book{ Parasuraman:98:TAB,
-    author = {Raja Parasuraman},
-    title = {The Attentive Brain},
-    publisher = {The MIT Press},
-    year = {1998},
-    month = {May}
-}
-
-@inproceedings{ Chen:03:AVA,
-    author = {Chen, L. Q. and Xie, X. and Fan, X. and Ma, W. Y. and Zhang, H. J. and Zhou, H. Q.},
-    title = {A visual attention model for adapting images on small displays},
-    booktitle = {ACM Multimedia System Journal},
-    volume = {9},
-    year = {2003},
-}
-
-@inproceedings{ Liu:05:ARS,
-    author = {Song Liu and Liang-Tien Chia and Deepu Rajan},
-    title = {Attention region selection with information from professional digital camera},
-    booktitle = {MULTIMEDIA '05: Proceedings of the 13th annual ACM international conference on Multimedia},
-    year = {2005},
-    isbn = {1-59593-044-2},
-    pages = {391--394},
-    location = {Hilton, Singapore},
-    doi = {http://doi.acm.org/10.1145/1101149.1101233},
-    publisher = {ACM Press},
-    address = {New York, NY, USA},
-}
-
-@article{ Russell:05:LMD,
-    author = {Russell, B. C.  and Torralba, A.  and Murphy, K. P.  and Freeman, W. T. },
-    citeulike-article-id = {942278},
-    journal = {MIT AI Lab Memo AIM-2005-025},
-    keywords = {labelme},
-    priority = {2},
-    title = {LabelMe: a Database and Web-Based Tool for Image Annotation},
-    year = {2005}
-}
-
-@article{Ahn:2006:GWP,
-    author = {Luis von Ahn},
-    journal = {IEEE Computer},
-    title = {Games with a Purpose},
-    pages = {96--98},
-    year = {2006}
-}
-
-@inproceedings{Ahn:04:LIC,
-    author = {Luis von Ahn and Laura Dabbish},
-    title = {Labeling images with a computer game},
-    booktitle = {Proceedings of ACM SIGCHI 2004},
-    year = {2004},
-    pages = {319--326},
-}
-
-@inproceedings{ Ahn:06:PGL,
-    author = {Luis von Ahn and Ruoran Liu and Manuel Blum},
-    title = {Peekaboom: a game for locating objects in images},
-    booktitle = {Proceedings of ACM SIGCHI 2006},
-    year = {2006},
-    pages = {55--64},
-}
-
-@inproceedings{ Osberger:98:AIP,
-    author = {Wilfried Osberger and Anthony J. Maeder},
-    title = {Automatic Identification of Perceptually Important Regions in an Image},
-    booktitle = {Proceedings of ICPR 1998},
-    year = {1998},
-    pages = {701--704},
-}
-
-@inproceedings{ Stoev:00:ERI,
-    author = "Stanislav L. Stoev and Wolfgang Straser",
-    title = "Extracting regions of interest applying a local watershed transformation",
-    booktitle = "{IEEE} Visualization",
-    pages = "21-28",
-    year = "2000",
-    url = "citeseer.ist.psu.edu/stoev00extracting.html"
-}
-
-
-@INPROCEEDINGS{Snoek:2006:ACM,
-  AUTHOR = {C. G.M. Snoek and M. Worring and J. C. van Gemert and J.-M. Geusebroek and A. W.M. Smeulders},
-  TITLE = {The Challenge Problem for Automated Detection of 101 Semantic Concepts in Multimedia},
-  BOOKTITLE = {ACM Multimedia},
-  PAGES = {421-430},
-  YEAR = {2006}
-}
-
-@INPROCEEDINGS{Seitz:2006:ACE,
-  AUTHOR = {Steven M. Seitz and Brian Curless and James Diebel and Daniel Scharstein and Richard Szeliski},
-  TITLE = {A comparison and Evaluation of Multi-View Stereo Reconstruction Algorithms},
-  BOOKTITLE = {Proceedings of CVPR 2006},
-  PAGES = {519-526},
-  YEAR = {2006}
-}
-
-@article{Scharstein:2002:ATE,
-    author = {Daniel Scharstein and Richard Szeliski},
-    journal = {International Journal of Computer Vision},
-    title = {A Taxonomy and Evaluation of Dense Two-Frame Stereo Correspondence Algorithms},
-    volume = {47},
-    number = {3},
-    pages = {7--42},
-    year = {2002}
-}
-
-@INPROCEEDINGS{Clauss:2004:ASM,
-  AUTHOR = {Martin Clauss and Pierre Bayerl and Heiko Neumann},
-  TITLE = {A statistical measure for evaluating regions-of-interest based attention algorithms},
-  BOOKTITLE = {Proceedings of 26th Pattern Recognition Symposium (DAGM 2004)},
-  PAGES = {383-390},
-  YEAR = {2004}
-}
-
-
-@article{Privitera:2000:ADV,
-    author = {Claudio M. Privitera and Lawrence W. Stark},
-    title = {Algorithms for Defining Visual Regions-of-Interest: Comparison with Eye Fixations},
-    journal = {IEEE Transactions on Pattern Analysis Machine Intelligence},
-    volume = {22},
-    number = {9},
-    year = {2000},
-    pages = {970--982},
-}
-
-@article{Nguyen:2006:GTR,
-    author = {Anthony Nguyen and Vinod Chandran and Sridha Sridharan},
-    title = {Gaze Tracking for Region of Interest Coding in {JPEG} 2000},
-    journal = {Signal Processing: Image Communication},
-    volume = {21},
-    number = {5},
-    year = {2006},
-    pages = {359--377},
-}
-
-@article{Frey:2007:CPM,
-    author = {Brendan J. Frey and Delbert Dueck},
-    title = {Clustering by Passing Messages Between Data Points},
-    journal = {Science},
-    volume = {315},
-    year = {2007},
-    pages = {972--976},
-}
-
-@inproceedings{Wooding:2002:FMQ,
-    author = {David S. Wooding},
-    title = {Fixation maps: quantifying eye-movement traces},
-    booktitle = {Proceedings of the 2002 symposium on Eye tracking research \& applications},
-    year = {2002},
-    pages = {31--36},
-}
-
-@inproceedings{Santella:2004:RCE,
-    author = {Anthony Santella and Doug DeCarlo},
-    title = {Robust clustering of eye movement recordings for quantification of visual interest},
-    booktitle = {Proceedings of the 2004 symposium on Eye tracking research \& applications},
-    year = {2004},
-    pages = {27--34},
-}
-
-@article{Rowe:2005:ASR,
- author = {Lawrence A. Rowe and Ramesh Jain},
- title = {ACM SIGMM retreat report on future directions in multimedia research},
- journal = {ACM Transactions on Multimedia Computing, Communications, and Applications},
- volume = {1},
- number = {1},
+@article{Malassiotis:05:RRHPEFRD,
+ author = {Malassiotis, Sotiris and Strintzis, Michael G.},
+ title = {Robust real-time 3D head pose estimation from range data},
+ journal = {Pattern Recogn.},
+ volume = {38},
+ issue = {8},
+ month = {August},
  year = {2005},
- pages = {3--13},
-}
-
-@MISC{TRECVID,
-    AUTHOR      = {NIST},
-    TITLE       = {\url{http://www-nlpir.nist.gov/projects/trecvid/}}
-}
-
-@techreport{Griffin:2007:COC,
-    Author = {G. Griffin and A. Holub and P. Perona},
-    Title = {Caltech-256 Object Category Dataset},
-    Institution = {California Institute of Technology},
-    Year = {2007},
-    URL = {http://www.vision.caltech.edu/Image_Datasets/Caltech256},
-    Number = {UCB/CSD-04-1366}
-}
-
-@MISC{CMU,
-    AUTHOR      = {Henry A. Rowley and Shumeet Baluja and Takeo Kanade},
-    TITLE       = {\url{http://vasc.ri.cmu.edu/NNFaceDetector/}}
-}
-
-@book{NumRecipes,
-    author = {Press, William  H.  and Flannery, Brian  P.  and Teukolsky, Saul  A.  and Vetterling, William  T. },
-    publisher = {Cambridge University Press},
-    title = {Numerical Recipes in C : The Art of Scientific Computing},
-    year = {1992}
-}
-
-@article{Swain:1991:CI,
-    author = {Michael J. Swain and Dana H. Ballard},
-    title = {Color indexing},
-    journal = {International Journal of Computer Vision},
-    volume = {7},
-    number = {1},
-    year = {1991},
-    pages = {11--32},
+ issn = {0031-3203},
+ pages = {1153--1165},
+ numpages = {13},
+ url = {http://dx.doi.org/10.1016/j.patcog.2004.11.020},
+ doi = {http://dx.doi.org/10.1016/j.patcog.2004.11.020},
+ acmid = {1746581},
+ publisher = {Elsevier Science Inc.},
+ address = {New York, NY, USA},
+ keywords = {Face, Head, Pose, Range data, Tracking},
+ abstract = {In this paper a real-time 3D pose estimation algorithm using range data is described. The system relies on a novel 3D sensor that generates a dense range image of the scene. By not relying on brightness information, the proposed system guarantees robustness under a variety of illumination conditions, and scene contents. Efficient face detection using global features and exploitation of prior knowledge along with novel feature localization and tracking techniques are described. Experimental results demonstrate accurate estimation of the six degrees of freedom of the head and robustness under occlusions, facial expressions, and head shape variability.}
 }

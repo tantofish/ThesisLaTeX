@@ -1,18 +1,27 @@
-\chapter{Survey and The Proposed 3D Head Motion Tracking}
+\chapter{Survey and The Proposed Head Motion Tracking}
 \label{c:related}
 
 % talk about ROI, what it is, why it is important
+\section{Related Works}
+There are many great works on head pose estimation, and the methods can be divided into several categories depending on the type of data required (i.e., 2D image or depth map). A comprehensive survey on methods based on 2D images is given by \cite{Ref_Survey}. We can further divide the 2D image-based algorithms into two types, feature-based \cite{Ref1,Ref8,Ref10,Ref11,Ref18} and appearance-based \cite{Ref2,Ref4,Ref5,Ref6,Ref7,Ref17,Ref18} methods. Feature-based methods focus on the specific facial feature points while appearance-based methods look at the entire face.
+\cite{1004163,1240823}
 
-Attention plays an important role in human vision. For example, when
-we look at an image, our eye movements comprise a succession of {\em
-fixations} (repetitive positioning of eyes to parts of the image)
-and {\em saccades} (rapid eye jump). Those parts of the image that
-cause eye fixations and capture primary attention are called {\em
-regions of interest} (ROIs). Studies in visual attention and eye
-movement have shown that humans generally only attend to a few ROIs.
-Detecting these visually attentive regions in images is challenging
-but useful in many multimedia applications, such as automatic
-thumbnail cropping, object recognition, content-based image
-retrieval, adaptive image compression and automatic browsing in
-small-screen devices.
+\subsection{Feature-Based Methods}
+Feature-based methods tend to find feasible matches either between object features and image features or between features of consecutive video frames. Yang et al. \cite{patent} estimate the head pose by first tracking three facial feature points, which are the eyes and the nose tip, and then using gradient decent algorithm to optimize the defined distance function modeled by rotation and translation parameters. The approach of \cite{Ref1} acquires input video from vertical stereo cameras so that they can easily remove outliers through epipolar system in the feature matching step. Although this approach achieves real-time performance, a personal face model and some user hints are required for initialization. Vatahska et al. \cite{Ref8} construct a feature detector using Adaboost in combination with Haar-like features. Then they use a neural network to estimate the three rotation angles of the head pose.
 
+\subsection{Appearance-Based Methods}
+Appearance-based methods use example images of the objects to train a classifier and perform recognition. In head pose estimation, these methods learn a separate detector for each pose, e.g., \cite{Ref2,Ref7}. Osadchy et al. \cite{Ref5} use a convolutional network to detect the face and its orientation in real-time. Balasubramanian et al. \cite{Ref4} and Chen et al. \cite{Ref17} both regard this issue as a dimensionality reduction problem, e.g., Construct the mapping from high-dimensional space of facial images to low-dimensional manifold where the data points of head poses lie on. M. Storer et al.\cite{Ref6} build a 3D morphable appearance model based on registered laser scans of human heads, which is used for fitting the observed data iteratively in an analysis-by-synthesis approach. Generally speaking, appearance-based methods usually have higher computational complexity, and they often extra training steps for each user.
+
+\subsection{Depth-Based Methods}
+On the the other hand, methods relying solely on 2D images share several limitations, the most important of which is that they are so sensitive to illumination variations that they can no longer be robust under weak or no light environment. With the development of fast depth map generating systems such as \cite{Ref12}, many works are inspired to use depth data as additional information to improve color-image based algorithms \cite{Ref1,Ref2,Ref20}, and several recent works use depth data as their primary information \cite{Ref3,Ref9,Ref16,Ref19}. Breitenstein et al. \cite{Ref3} developed a real time head pose estimation system that is capable of handling large angle rotations of $\pm 90^{\circ}$ yaw, $\pm 45^{\circ}$ pitch and $\pm 30^{\circ}$roll. The method generates many nose candidates. Each candidate  stands for a head pose hypothesis. The reference range images of different poses are rendered offline in the pre-processing stop. By resorting to the parallel computation power of the GPU, they can save these reference images on the graphic card and simultaneously compare the input images to all of them, and finally choose the pose minimizing a predefined cost function. Fanelli et al. \cite{Ref16} formulate pose estimation as a regression problem. They propose to use random regression forests to handle the task for reason that the method has high generalization power and low computational cost. Their system responses in real-time and their results are generally either comparable or superior to that of \cite{Ref3}. Weise et al. \cite{Ref19} estimate facial expression as well as head movement simultaneously. They construct user specific PCA morphable models using iterative closest point (ICP) algorithm first in offline preprocessing. Once more, ICP is used with point-plane constraints for head pose tracking, followed by a maximum a posterior (MAP) estimation for facial expression estimating. Noted that both ICP and MAP estimation have high computational complexity, the authors show that the system can still achieve real-time responses. However, the powerful performance of the system comes at the cost of relatively longer training and preprocessing time for every novice user.
+
+\section{Overview of The Proposed Head Motion Tracking}
+
+\subsection{Overview}
+Comparing to the above works, the approach that we proposed holds several advantages: Instead of using traditional 2D camera for data acquisition, e.g.\cite{Ref_Survey}, our approach only relies on depth camera so that the system can be robust under any lighting condition. Besides, the simplicity of our approach leads to a significantly lower computational cost so that we can achieve real-time performance even on devices that are not equipped with GPUs. Therefore, our approach will not be limited to powerful devices. Moreover, since we made a general assumption that every human head can be approximated  by a bounding box, our approach needs no personal information. That is, every novice user can drive this system without training or registration , e.g.\cite{Ref19}.
+
+\subsection{Hardware}
+Kinect....
+
+\subsection{Architecture}
+Flow Chart...
