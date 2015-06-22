@@ -7,6 +7,8 @@
 % this stuff is worth it, you can buy me a chocolate in return Tz-Huan Huang
 % ----------------------------------------------------------------------------
 
+\usepackage{pdfpages}
+
 %\RequirePackage{tabular}
 \RequirePackage{array}
 \RequirePackage{graphicx}
@@ -111,47 +113,48 @@
 % Command to generate the certification page
 \newcommand{\makecertification}{ % {{{
 \begin{CJK}{UTF8}{nkai}\CJKhorz
-\addcontentsline{toc}{chapter}{口試委員會審定書}
-\begin{center}
-\fontsize{24}{36}\selectfont國立臺灣大學碩士學位論文\\
-口試委員會審定書
-
-\vspace{0.5cm}
-
-\fontsize{20}{30}\selectfont\thetitleCH\\
-\thetitleEN
-\end{center}
-
-\vspace{1cm}
-
-\fontsize{15}{24}\selectfont
-本論文係\theauthorCH{}君 \raisebox{1pt}{(\thestudentID)}
-在國立臺灣大學資訊工程學研究所完成之碩士學位論文，於民國 
-\raisebox{1pt}{\theyearCH} 年 
-\raisebox{1pt}{\themonthCH} 月 
-\raisebox{1pt}{\thedateCH} 日承下列考試委員審查通過及口試及格，特此證明
-
-\vspace{1.5cm}
-
-\centering\begin{tabular}{cp{0.8\textwidth}}
-口試委員： & \\
-	& \\
-	& \rule{0.75\textwidth}{1pt} \\
-	& \\
-	& \rule{0.75\textwidth}{1pt} \\
-	& \\
-	& \rule{0.75\textwidth}{1pt} \\
-	& \\
-	& \rule{0.75\textwidth}{1pt} \\
-	& \\
-	& \rule{0.75\textwidth}{1pt} \\
-	& \\
-所~主~任 & \rule{0.75\textwidth}{1pt}
-\end{tabular}
+%\addcontentsline{toc}{chapter}{口試委員會審定書}
+%\begin{center}
+%\fontsize{24}{36}\selectfont國立臺灣大學碩士學位論文\\
+%口試委員會審定書
+%
+%\vspace{0.5cm}
+%
+%\fontsize{20}{30}\selectfont\thetitleCH\\
+%\thetitleEN
+%\end{center}
+%
+%\vspace{1cm}
+%
+%\fontsize{15}{24}\selectfont
+%本論文係\theauthorCH{}君 \raisebox{1pt}{(\thestudentID)}
+%在國立臺灣大學資訊工程學研究所完成之碩士學位論文，於民國 
+%\raisebox{1pt}{\theyearCH} 年 
+%\raisebox{1pt}{\themonthCH} 月 
+%\raisebox{1pt}{\thedateCH} 日承下列考試委員審查通過及口試及格，特此證明
+%
+%\vspace{1.5cm}
+%
+%\centering\begin{tabular}{cp{0.8\textwidth}}
+%口試委員： & \\
+%	& \\
+%	& \rule{0.75\textwidth}{1pt} \\
+%	& \\
+%	& \rule{0.75\textwidth}{1pt} \\
+%	& \\
+%	& \rule{0.75\textwidth}{1pt} \\
+%	& \\
+%	& \rule{0.75\textwidth}{1pt} \\
+%	& \\
+%	& \rule{0.75\textwidth}{1pt} \\
+%	& \\
+%所~主~任 & \rule{0.75\textwidth}{1pt}
+%\end{tabular}
 \newpage
 \end{CJK}
 }
 % }}}
+
 
 % Environment to generate the english abstract page.
 \newenvironment{abstractEN} % {{{

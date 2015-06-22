@@ -1,15 +1,9 @@
 \begin{abstractEN}
+In this thesis, we propose a system to estimate head poses only using depth information in real-time. Two methods are developed. First, assuming that a head can be approximated by a bounding box, we find the best fitted plane for the frontal face by the least square error method. Thus, the normal vector of this plane represents the head orientation. Second, an optimization method based on 3D model fitting is developed. We iteratively minimize the distance between source and target point clouds of a user's head. This method is more robust and the results are more precise. Both of the proposed methods give fully real-time responses (30fps) without needing the GPU speedup. We adopt a commodity depth sensor named Microsoft Kinect as well as Asus Xtion, and use the depth image as the only input so that our system will not be affected by illumination variations. The simplicity of this acquisition device comes at the cost of frequent noises in the acquired data. We demonstrate that 6 degree of freedom real-time head motion tracking in 3D space can be achieved with noisy depth data.
 
-This thesis presents a system which estimates human head poses only using depth information in real-time. 
-We first track the user's nose, and sample an amount of 3D points around the nose. 
-Assuming that a head can be approximated by a bounding box, 
-we use the point cloud to fit planes of the head by least square error method, 
-the normal vector of the plane yields yaw and pitch angle of user’s head orientation. 
-On the other hand, ellipse fitting using head contour can provide the rolling angles. 
-We adopt a real-time depth estimation method by using cameras such as Microsoft Kinect sensor. 
-The simplicity of this acquisition device comes at the cost of high noises in the acquired data. 
-Our system is not affected by the illumination conditions in environments since only depth information is required in our system. 
-We demonstrate that 3D head pose estimation can be achieved in real-time with noisy depth data and without user calibration.
+　
+
+\noindent\bf{Keywords: Real-Time Head Motion Tracking; Depth Image; Kinect; 3D Template Matching; Iterative Optimization; Least Square Method}
 
 \end{abstractEN}
 
@@ -19,6 +13,6 @@ We demonstrate that 3D head pose estimation can be achieved in real-time with no
 
 %\terms{Design, Human factors, Performance.}
 
-\keywords{Head Pose Estimation \and Depth Map \and Kinect \and Least Square Error Plane \and Calibration Free \and Nose Tracking}
+\keywords{Head Pose Estimation \and Depth Map \and Kinect \and Least Square Error Plane \and Optimization \and Gradient Decent Algorithm \and Nose Tracking}
 
 \end{comment}

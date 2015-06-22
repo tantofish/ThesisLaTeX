@@ -1,4 +1,4 @@
-\documentclass[a4paper, 12pt]{book}
+\documentclass[a4paper, 12pt, oneside]{book}
 
 \usepackage{times}
 \usepackage{verbatim}
@@ -6,6 +6,14 @@
 \usepackage{url}
 \usepackage{graphicx}
 \usepackage{array}
+\usepackage{theorem}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{setspace}
+\usepackage{pdfpages}
+\usepackage{wallpaper}
+%\CenterWallPaper{.4}{watermark.pdf}
 
 % uncomment this if you want to indent the first paragraph
 %\usepackage{indentfirst}
@@ -32,10 +40,13 @@
 % cover page
 \maketitle
 
+\includepdf{certification.pdf}
+
 % side page, used for printing on spline.
 \makeside
 
 \frontmatter
+
 
 \begin{CJK}{UTF8}{nkai}
 \CJKhorz
@@ -44,21 +55,23 @@
 % comment one of the following unless you are sure you want to 
 % have both english and chinese acknowledgements in your thesis
 
+\doublespacing
 \input{acknowledgements}
 \input{abstractCH}
 \input{abstractEN}
 \tableofcontents
 \end{CJK}
+\doublespacing
 \listoffigures
-\listoftables
+%\listoftables
 
 \mainmatter
-
+\spacing{2.5}
 % input your thesis here
 \input{introduction}
 \input{relatedworks}
-\input{modelmerge}
-\input{tracking}
+\input{overview}
+\input{method}
 \input{results}
 \input{conclusion}
 
@@ -72,4 +85,5 @@
 
 \appendix
 
+\includepdf[pages=1-2]{resume.pdf}
 \end{document}
